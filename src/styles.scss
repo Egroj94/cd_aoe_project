@@ -1,0 +1,69 @@
+$titulos: 24px;
+$subtitulos: 18px;
+$parrafos: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    background-image: url('/assets/imgs/fondo_canon.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    position: static;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+// Content of components
+.separador{
+    margin-top: 70px;
+    width: 100%;
+    position: static;
+    height: auto;
+    background: rgba(5,5,5,.8);
+    padding: 30px 0px 60px 0px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    padding-top: 2%;
+    font-size: $titulos;
+    color: #ffff;
+    text-align: center;
+}
+
+.parrafo{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: $parrafos;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 30px;
+    color: #ffff;
+}
+
+.mas{
+    color: #ffff;
+    margin-top: 20px;
+    float: right;
+    font-size: 13px;
+}
+
+.mas:hover{
+    cursor: pointer;
+    color: #0D5CE5;
+}

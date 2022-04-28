@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CivilizationsService } from 'src/app/services/civilizations.service';
+import { Civilizations } from "../../models/civilizations/civilizations"
 
 @Component({
   selector: 'app-civilizations',
@@ -7,9 +9,17 @@ import { CivilizationsService } from 'src/app/services/civilizations.service';
   styleUrls: ['./civilizations.component.scss']
 })
 
-export class CivilizationsComponent {
+export class CivilizationsComponent implements OnInit{
 
-  title = 'civilizationsArray';
+  // Search
+  handleSearch(value: string){
+    console.log(value);
+    this.valor_filtro = value;
+  }
+
+  valor_filtro = '';
+  
+  /* API */
   civilizations: any;
 
   constructor(private civilization:CivilizationsService){}
@@ -22,5 +32,7 @@ export class CivilizationsComponent {
       (res) => { this.civilizations = res; console.log(res); },
       (error) => { console.error(error) }
     ) 
-  }
+  } 
+
+
 }

@@ -1,0 +1,15 @@
+.mat-form-field{
+    width: 50%;
+    color: #ffff;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.mat-lbl{
+    color: rgba(254,254,254,0.5);
+    font-size: 15px;
+}
+
+.mat-form-field input::placeholder{
+    color: rgba(254,254,254,0.5);
+}

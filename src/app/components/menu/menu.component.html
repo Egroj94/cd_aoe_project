@@ -2,15 +2,17 @@
     <div class="div-nav" id="myMenu">
         <h3 class="tit-inicio">Age of Empires</h3>
 
-        <nav class="main-nav" id="nav" style="float:right;">
-            <div>
-                <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
-                    <li>Inicio</li>
-                </a>
-                <a routerLink="/civilizations" routerLinkActive="activo">
-                    <li>Civilizaciones</li>
-                </a>
-            </div>
+        <nav class="main-nav" id="nav">
+                <li>
+                    <a class="mInicio col-6" routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+                    Inicio
+                    </a>
+                </li>
+                <li>
+                    <a class="mCiv col-6" routerLink="/civilizations" routerLinkActive="activo">
+                    Civilizaciones
+                    </a>
+                </li>
         </nav>
     </div>
 

@@ -1,12 +1,18 @@
 /* CSS DEL MENU - JRB */
 h3{
-  float: left;
+  float: right;
   color: #ffffff;
   font-size: 24px;
   padding-left: 20px;
   padding-top: 7px;
   text-shadow: 2px 6px 5px rgba(0,0,0,0.69);
   font-family: 'Cormorant Garamond', serif;
+  margin-right: 10px;
+}
+
+.main-nav li{
+  width: 200px;
+  position: relative;
 }
 
 .div-nav {
@@ -67,4 +73,12 @@ h3{
 // CSS DE LA CLASE ACTIVE PARA EL MENU
 .activo {
   background-color: #5D5F61;
+}
+
+
+/* MEDIA RESPONSIVE */
+@media only screen and (max-width: 325px){
+  .tit-inicio{
+    display: none;
+  }
 }

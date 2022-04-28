@@ -18,7 +18,6 @@
 }
 
 .card {
-    margin-top: 30px;
     display: inline-block;
     flex-direction: column;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
@@ -81,3 +80,9 @@ input[type=text]{
     background: #fefefe33;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 375px){
+   .card{
+       width: auto;
+   }
+  }

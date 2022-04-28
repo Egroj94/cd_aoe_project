@@ -7,9 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class CivilizationsService {
 
   // Ambiente local
-  private API = "api/v1/civilization/5";
+  //private API = "api/v1/civilization/5";
   // Ambiente produccion
-  //private API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/5"
+  private API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/5"
 
   //inicializamos la variable http en el constructor 
   constructor(public http:HttpClient){}

@@ -3,9 +3,13 @@
         <h3 class="tit-inicio">Age of Empires</h3>
 
         <nav class="main-nav" id="nav" style="float:right;">
-            <div class="nav-links">
-                <a class="link-item" routerLink=""><li>Inicio</li></a>
-                <a class="link-item" routerLink="/civilizations"><li>Civilizaciones</li></a>
+            <div>
+                <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+                    <li>Inicio</li>
+                </a>
+                <a routerLink="/civilizations" routerLinkActive="activo">
+                    <li>Civilizaciones</li>
+                </a>
             </div>
         </nav>
     </div>

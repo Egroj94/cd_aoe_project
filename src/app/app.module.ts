@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+// Routes
 import { RouterModule } from '@angular/router';
+import { RouterLinkActive } from '@angular/router';
 // Forms directive
 import { FormsModule } from '@angular/forms';
 //Components
@@ -13,9 +15,8 @@ import { CivilizationsComponent } from './components/civilizations/civilizations
 import { CivilizationsService } from './services/civilizations.service';
 //Module HTTP
 import { HttpClientModule } from '@angular/common/http';
-
+// PipeObj para iterar array
 import { ObjToArrayPipe } from './components/civilizations/objArray.pipe';
-
 
 @NgModule({
   declarations: [

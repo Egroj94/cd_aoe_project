@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 #jrb
-proxy.conf
+proxy.conf.json

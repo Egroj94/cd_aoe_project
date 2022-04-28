@@ -6,13 +6,15 @@ import { HttpClient } from '@angular/common/http';
 
 export class CivilizationsService {
 
-  //private API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations";
+  // Ambiente local
   private API = "api/v1/civilization/5";
-  //private API = "api/v1/civilizations";
+  // Ambiente produccion
+  //private API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/5"
 
+  //inicializamos la variable http en el constructor 
   constructor(public http:HttpClient){}
 
-  //Obtenemos los valores de la API
+  //Obtenemos los valores de la API para retornarlos al componente "civilizations.component"
   public getCivilizations():Observable<any>{
     return this.http.get(this.API);
   }

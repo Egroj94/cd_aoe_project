@@ -10,24 +10,17 @@ import { CivilizationsService } from 'src/app/services/civilizations.service';
 export class CivilizationsComponent {
 
   title = 'civilizationsArray';
-
   civilizations: any;
 
   constructor(private civilization:CivilizationsService){}
 
   ngOnInit()
   {
+    // Hacemos el llamado de la API declarada en el Service
     this.civilization.getCivilizations().subscribe
     (
-      (res) => 
-      { 
-        this.civilizations = res; 
-        console.log(res);
-      },
-      (error) => 
-      { 
-        console.error(error) 
-      }
+      (res) => { this.civilizations = res; console.log(res); },
+      (error) => { console.error(error) }
     ) 
   }
 }

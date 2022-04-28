@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class CivilizationsService {
 
   //private API = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations";
-  private API = "api/v1/civilization/6";
+  private API = "api/v1/civilization/5";
   //private API = "api/v1/civilizations";
 
   constructor(public http:HttpClient){}
